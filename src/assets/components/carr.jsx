@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PixelImageButton from "./pixelimage";
+import clickSound from "../sounds/click.wav"; // pastikan path benar
 
 const ImageCarousel = ({ images }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -9,6 +10,14 @@ const ImageCarousel = ({ images }) => {
   const sideWidth = 100;
   const sideHeight = 100;
   const gap = 20;
+
+  const handleClick = (index) => {
+    const audio = new Audio(clickSound);
+    audio.volume = 0.5;
+    audio.play().catch(() => {}); // mainkan suara klik
+
+    setSelectedIndex(index);
+  };
 
   return (
     <div
@@ -34,7 +43,7 @@ const ImageCarousel = ({ images }) => {
             imgSrc={img}
             width={width}
             height={height}
-            onClick={() => setSelectedIndex(index)}
+            onClick={() => handleClick(index)} // pake handleClick
             style={{
               position: "absolute",
               left: "50%",
