@@ -14,6 +14,8 @@ import PixelCarr from "../assets/components/carr";
 const Dadplease = () => {
   const [text, setText] = useState("");
   const fullText = "dad i am not forcing but could you buy me something? <3";
+  const fullText1 = "Hope List";
+   const fullText2 = "Click to know each detail!";
   const [showButton, setShowButton] = useState(false);
   const images = [money, ticket, plane, passport];
 
@@ -77,6 +79,34 @@ const interval = setInterval(() => {
         gap: "20px",
       }}
     >
+       <h1
+        style={{
+          fontFamily: "Minecraft Regular",
+          fontSize: "36px",
+          color: "white",
+          textShadow: "2px 2px 4px black",
+          textAlign: "center",
+          paddingLeft: "6px",
+          paddingRight: "6px",
+          margin: "0"
+        }}
+      >
+        {fullText1}
+      </h1>
+      <h1
+        style={{
+          fontFamily: "Minecraft Regular",
+          fontSize: "14px",
+          color: "white",
+          textShadow: "2px 2px 4px black",
+          textAlign: "center",
+          paddingLeft: "6px",
+          paddingRight: "6px",
+          margin: "0"
+        }}
+      >
+        {fullText2}
+      </h1>
 
       <PixelCarr images={images} />
       
