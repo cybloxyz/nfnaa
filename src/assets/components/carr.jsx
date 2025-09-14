@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import PixelImageButton from "./pixelimage";
-import clickSound from "../sounds/click.wav"; // pastikan path benar
+import clickSound from "../sounds/click.wav";
+import { useNavigate } from "react-router-dom";
 
 const ImageCarousel = ({ images }) => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const navigate = useNavigate();
+
+  // Ambil index terakhir dari localStorage kalau ada
+  const [selectedIndex, setSelectedIndex] = useState(
+    () => parseInt(localStorage.getItem("selectedIndex")) || 0
+  );
 
   const selectedWidth = 140;
   const selectedHeight = 140;
@@ -11,12 +17,22 @@ const ImageCarousel = ({ images }) => {
   const sideHeight = 100;
   const gap = 20;
 
-  const handleClick = (index) => {
+  const handleClick = (index, path) => {
     const audio = new Audio(clickSound);
     audio.volume = 0.5;
-    audio.play().catch(() => {}); // mainkan suara klik
+    audio.play().catch(() => {});
 
-    setSelectedIndex(index);
+    if (index !== selectedIndex) {
+      // kalau klik item kiri/kanan → geser aja + simpan ke localStorage
+      setSelectedIndex(index);
+      localStorage.setItem("selectedIndex", index);
+      return;
+    }
+
+    // kalau item sudah di tengah → baru navigate
+    if (path) {
+      navigate(path);
+    }
   };
 
   return (
@@ -40,10 +56,10 @@ const ImageCarousel = ({ images }) => {
         return (
           <PixelImageButton
             key={index}
-            imgSrc={img}
+            imgSrc={img.src} // pakai img.src
             width={width}
             height={height}
-            onClick={() => handleClick(index)} // pake handleClick
+            onClick={() => handleClick(index, img.path)}
             style={{
               position: "absolute",
               left: "50%",
@@ -60,6 +76,11 @@ const ImageCarousel = ({ images }) => {
           />
         );
       })}
+      <div style={{ marginTop: "182px", textAlign: "center", maxWidth: "300px", position: "absolute" }}>
+        <p style={{ whiteSpace: "pre-line", fontFamily: "Minecraft Regular", fontSize: "14px", color: "white", textShadow: "1px 1px 2px black", margin: 0 }}>
+          {images[selectedIndex].description}
+        </p>
+      </div>
     </div>
   );
 };

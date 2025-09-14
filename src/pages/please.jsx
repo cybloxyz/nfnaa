@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PixelButton from "../assets/components/PixelButton";
+import PixelButtonpink from "../assets/components/Pixelbuttonpink";
+import bag from "../assets/images/bag.png";
 import money from "../assets/images/money.png";
 import passport from "../assets/images/passport.png";
 import plane from "../assets/images/plane.png";
@@ -7,17 +9,24 @@ import ticket from "../assets/images/ticket.png";
 import typingSound from "../assets/sounds/typingcut.mp3";
 import pixsong from "../assets/sounds/pixsong.mp3";
 import "../../Minecraft_Regular/stylesheet.css";
-import PixelImage from "../assets/components/pixelimage";
 import PixelCarr from "../assets/components/carr";
-
+import { useNavigate, Link } from "react-router-dom";
+import "../please.css";
 
 const Dadplease = () => {
   const [text, setText] = useState("");
-  const fullText = "dad i am not forcing but could you buy me something? <3";
+  const fullText = "dad i am not forcing but could you give me something please? <3";
   const fullText1 = "Hope List";
-   const fullText2 = "Click to know each detail!";
+  const fullText2 = "Click the items to know each detail!";
   const [showButton, setShowButton] = useState(false);
-  const images = [money, ticket, plane, passport];
+  const images = [
+    {src: money, path: "/expenses"},
+    {src: ticket, path: "/ticket"},
+    {src: plane, path: "/destination"},
+    {src: bag, path: "/belongs"},
+    {src: passport, path: "/passport"}
+  ];
+  const navigate = useNavigate();
 
   useEffect(() => {
     // ====== Background Music ======
@@ -79,50 +88,12 @@ const interval = setInterval(() => {
         gap: "20px",
       }}
     >
-       <h1
-        style={{
-          fontFamily: "Minecraft Regular",
-          fontSize: "36px",
-          color: "white",
-          textShadow: "2px 2px 4px black",
-          textAlign: "center",
-          paddingLeft: "6px",
-          paddingRight: "6px",
-          margin: "0"
-        }}
-      >
-        {fullText1}
-      </h1>
-      <h1
-        style={{
-          fontFamily: "Minecraft Regular",
-          fontSize: "14px",
-          color: "white",
-          textShadow: "2px 2px 4px black",
-          textAlign: "center",
-          paddingLeft: "6px",
-          paddingRight: "6px",
-          margin: "0"
-        }}
-      >
-        {fullText2}
-      </h1>
+      <h1 className="dadplease-title">{fullText1}</h1>
+      <h1 className="dadplease-subtitle">{fullText2}</h1>
 
       <PixelCarr images={images} />
       
-      <h1
-        style={{
-          fontFamily: "Minecraft Regular",
-          fontSize: "20px",
-          color: "white",
-          textShadow: "2px 2px 4px black",
-          textAlign: "center",
-          paddingLeft: "6px",
-          paddingRight: "6px"
-        }}
-      >
-        {text}
-      </h1>
+      <h1 className="dadplease-typing">{text}</h1>
 
      {showButton && (
     <div
@@ -133,8 +104,12 @@ const interval = setInterval(() => {
     }}
    >
     <PixelButton
-      label="ok boleh"
+      label="sure!"
       onClick={() => alert("thank you<3 buttons still in progress..")}
+    />
+     <PixelButtonpink
+      label="reason?"
+      onClick={() => navigate("/reason")}
     />
     </div>
     )}

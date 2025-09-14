@@ -107,3 +107,28 @@ body {
 }
 
 
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.default-bg {
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #cddafd,
+    #d2deff,
+    #ffc1d8,
+    #ffc8dd,
+    #ffc8dd,
+    #cdb4db
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

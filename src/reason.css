@@ -1,0 +1,48 @@
+.reason-title {
+  font-family: "Minecraft Regular";
+  font-size: 40px; /* laptop default */
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  padding: 0 6px;
+}
+
+.reason-paragraph {
+  font-family: "Minecraft Regular";
+  font-size: 20px; /* laptop default */
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0;
+  white-space: pre-line;
+}
+
+/* kalau layar <= 768px (HP/Tablet) */
+@media (max-width: 768px) {
+  .reason-title {
+    font-size: 20px;
+  }
+
+  .reason-paragraph {
+    font-size: 14px;
+  }
+}
+
+.default-bg {
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #cddafd,
+    #d2deff,
+    #ffc1d8,
+    #ffc8dd,
+    #ffc8dd,
+    #cdb4db
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

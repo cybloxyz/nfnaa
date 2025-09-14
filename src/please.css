@@ -1,0 +1,64 @@
+.dadplease-title {
+  font-family: "Minecraft Regular";
+  font-size: 56px; /* default desktop */
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  padding: 0 6px;
+  margin: 0;
+}
+
+.dadplease-subtitle {
+  font-family: "Minecraft Regular";
+  font-size: 24px; /* default desktop */
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  padding: 0 6px;
+  margin: 0;
+}
+
+.dadplease-subsub {
+  font-family: "Minecraft Regular";
+  font-size: 32px; /* default desktop */
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  padding: 0 6px;
+  margin: 0;
+}
+
+.dadplease-typing {
+  font-family: "Minecraft Regular";
+  font-size: 32px; /* default desktop */
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  padding: 0 6px;
+}
+
+/* === Responsive untuk HP (max 768px) === */
+@media (max-width: 768px) {
+  .dadplease-title {
+    font-size: 48px; /* lebih kecil biar muat di HP */
+  }
+
+  .dadplease-subtitle {
+    font-size: 12px;
+  }
+
+  .dadplease-typing {
+    font-size: 14px;
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+
+.wiggle {
+  animation: wiggle 0.3s ease-in-out infinite;
+}

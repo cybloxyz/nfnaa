@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import buttonImg from "./button.png";
+import buttonImg from "./buttonp.png";
 import clickSound from "../sounds/click.wav";
 
-const PixelButton = ({ label, onClick }) => {
+const PixelButtonpink = ({ label, onClick }) => {
   const [pressed, setPressed] = useState(false);
-
 
 
   const handleClick = () => {
@@ -25,9 +24,9 @@ const PixelButton = ({ label, onClick }) => {
       style={{
         width: "138px",
         height: "64px",
+         margin: "20px",
         background: `url(${buttonImg}) no-repeat center/100% 100%`,
         display: "flex",
-        margin: "20px",
         justifyContent: "center",
         alignItems: "center",
         cursor: "pointer",
@@ -51,4 +50,4 @@ const PixelButton = ({ label, onClick }) => {
   );
 };
 
-export default PixelButton;
+export default PixelButtonpink;

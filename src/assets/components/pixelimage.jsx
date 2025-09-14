@@ -10,12 +10,13 @@ const PixelImageButton = ({ imgSrc, width = 128, height = 64, onClick, style }) 
   };
 
   return (
-    <div
+    <button
       onClick={handleClick}
       style={{
         width,
         height,
         background: `url(${imgSrc}) no-repeat center/100% 100%`,
+        border: "none",
         cursor: "pointer",
         display: "flex",
         justifyContent: "center",
