@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import pixsong from "../assets/sounds/pixsong.mp3";
+import pixsong from "../assets/sounds/midnight.mp3";
 import { useNavigate } from "react-router-dom";
 import "../reason.css";
 import PixelButton from "../assets/components/PixelButton";

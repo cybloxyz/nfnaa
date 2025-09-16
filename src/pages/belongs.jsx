@@ -5,11 +5,12 @@ import money from "../assets/images/money.png";
 import glasses from "../assets/images/glasses.png";
 import head from "../assets/images/headphones.png";
 import watch from "../assets/images/watch.png";
-import pixsong from "../assets/sounds/pixsong.mp3";
+import pixsong from "../assets/sounds/midnight.mp3";
 import "../../Minecraft_Regular/stylesheet.css";
 import PixelCarr from "../assets/components/carr";
 import { useNavigate, Link } from "react-router-dom";
 import "../please.css";
+import "../reason.css";
 
 const Belongs = () => {
   const fullText1 = "this is what i need to go there!";
@@ -56,16 +57,7 @@ const Belongs = () => {
 
   return (
     <div
-      style={{
-        height: "100vh",
-        background:
-          "linear-gradient(180deg, #cddafd, #d2deffff, #ffc1d8ff, #ffc8dd, #ffc8dd, #cdb4db)",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        gap: "20px",
-      }}
+      className="default-bg"
     >
       <h1 className="dadplease-subsub">{fullText1}</h1>
       <h1 className="dadplease-subtitle">{fullText2}</h1>

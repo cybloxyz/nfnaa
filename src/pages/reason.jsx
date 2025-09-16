@@ -1,10 +1,11 @@
 import React, {useEffect} from "react";
-import pixsong from "../assets/sounds/pixsongr.mp3";
+import pixsong from "../assets/sounds/dreams.mp3";
 import { useNavigate } from "react-router-dom";
 import "../reason.css";
 import PixelButton from "../assets/components/PixelButton";
 import Secret from "../assets/images/secret.png"
 import "../please.css";
+import "../reason.css";
 
 const Reason = () => {
     const navigate = useNavigate();
@@ -36,16 +37,7 @@ const Reason = () => {
 
     return (
       <div
-        style={{
-          height: "100vh",
-          background:
-            "linear-gradient(180deg, #cddafd, #d2deffff, #ffc1d8ff, #ffc8dd, #ffc8dd, #cdb4db)",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "20px",
-        }}
+        className="default-bg"
       >
         <img 
            src={Secret}
