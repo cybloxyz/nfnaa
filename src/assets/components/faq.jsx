@@ -8,13 +8,13 @@ function Accordion({ question, answer }) {
   };
 
   return (
-    <article className="flex flex-col gap-4 bg-white rounded-xl border border-gray-200 px-5 py-7 mb-4">
+    <article className="flex flex-col gap-4 bg-white/50 backdrop-blur-xl rounded-xl px-5 py-7 mb-4">
       <button
         className="flex justify-between items-center text-xl font-semibold"
         onClick={toggleAccordion}
       >
         <h2>{question}</h2>
-        <span className="w-6 h-6">{isOpen ? "▼" : "▲"} </span>
+        <span className="w-6 h-6">{isOpen ? "★" : "☆"} </span>
       </button>
       {isOpen && <p className="text-lg leading-7 font-thin">{answer}</p>}
     </article>
@@ -24,8 +24,8 @@ function Accordion({ question, answer }) {
 function FAQs() {
   const faqs = [
     {
-      question: "This is question 1?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      question: "What is BentoBox?",
+      answer: "BentoBox is startup website which sell tech things, visit to purchase something you may interest! ",
     },
     {
       question: "This is question 2?",
@@ -39,7 +39,7 @@ function FAQs() {
   ];
 
   return (
-    <div className="bg-gray-200 py-10 px-5 bg-[#F4F7FA]">
+    <div className="bg-transparent backdrop-blur-lg pt-2 pb-24 px-5">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-center mb-8 text-5xl font-semibold">
           Frequently Asked Questions
@@ -55,7 +55,7 @@ function FAQs() {
           Haven't got your answer?
           <a
             href="/support"
-            className="hover:text-blue-700 ml-2 text-violet-600 font-light"
+            className="hover:text-white ml-2 text-blue-900 font-light"
           >
             Contact our support now
           </a>
