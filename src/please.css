@@ -32,7 +32,7 @@
   font-family: "Minecraft Regular";
   font-size: 48px; /* default desktop */
   color: white;
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.377);
   text-align: left;
   align-items: flex-start;
   justify-self: start;
@@ -114,6 +114,10 @@
   gap: 6px;               /* jarak antara teks & gambar */
   flex-wrap: wrap;
   margin: 2vw;
+}
+
+.cursorp {
+  cursor: url('./assets/images/cursor.png'), auto;
 }
 
 /* style.css */

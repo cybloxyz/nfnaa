@@ -3,7 +3,7 @@ import PixelImageButton from "./pixelimage";
 import clickSound from "../sounds/click.wav";
 import { useNavigate } from "react-router-dom";
 
-const ImageCarousel = ({ images }) => {
+const ImageCarousel = ({ images, language, setLanguage }) => {
   const navigate = useNavigate();
 
   const [selectedIndex, setSelectedIndex] = useState(
@@ -25,9 +25,9 @@ useEffect(() => {
 
 
   // Ukuran item
-  const selectedSize = isMobile ? 100 : 300;
-  const sideSize = isMobile ? 70 : 240;
-  const gapPercent = isMobile ? 90 : 200; // % jarak antar item
+  const selectedSize = isMobile ? 175 : 350;
+  const sideSize = isMobile ? 120 : 240;
+  const gapPercent = isMobile ? 100 : 180; // % jarak antar item
 
   const handleClick = (index, path) => {
     const audio = new Audio(clickSound);
@@ -39,7 +39,12 @@ useEffect(() => {
       localStorage.setItem("selectedIndex", index);
       return;
     }
-    if (path) navigate(path);
+    if (path) {
+      if (path.startsWith("https")) {
+        window.open(path, "_blank", "noopener, noreferrer");
+      }
+    }
+    else {navigate(path)};
   };
 
   return (
@@ -87,7 +92,7 @@ useEffect(() => {
       <div
         style={{
           position: "absolute",
-          bottom: "-40px",
+          bottom: isMobile ? "-64px" : "-120px",
           left: "50%",
           transform: "translateX(-50%)",
           textAlign: "center",
@@ -105,7 +110,7 @@ useEffect(() => {
             lineHeight: 1.3,
           }}
         >
-          {images[selectedIndex].description}
+          {images[selectedIndex].description[language]}
         </p>
       </div>
     </div>

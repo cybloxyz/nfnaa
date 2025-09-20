@@ -1,12 +1,14 @@
-import LogoLoop from './logoloop';
+import LogoLoop from "../../components/LogoLoop";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
 
-const techLogos = [
-  { node: <SiReact />, title: "React", href: "https://react.dev" },
-  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
-  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
-  { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+import { FaInstagram, FaGithub, FaEnvelope } from "react-icons/fa";
+
+const socialLogos = [
+  { node: <FaInstagram />, title: "Instagram", href: "https://instagram.com/nfnailalhusna" },
+  { node: <FaGithub />, title: "GitHub", href: "https://github.com/cybloxyz" },
+  { node: <FaEnvelope />, title: "Email", href: "mailto:nafisanailalh7@gmail.com" },
 ];
+
 
 // Alternative with image sources
 const imageLogos = [
@@ -19,7 +21,7 @@ function App() {
   return (
     <div style={{ height: '200px', position: 'relative', overflow: 'hidden'}}>
       <LogoLoop
-        logos={techLogos}
+        logos={socialLogos}
         speed={120}
         direction="left"
         logoHeight={32}
@@ -28,7 +30,7 @@ function App() {
         scaleOnHover
         fadeOut
         fadeOutColor="#ffffff3d"
-        ariaLabel="Technology partners"
+        ariaLabel="Social Reach"
       />
     </div>
   );

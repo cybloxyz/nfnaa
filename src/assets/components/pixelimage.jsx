@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../please.css";
 
 const PixelImageButton = ({ imgSrc, width = 128, height = 64, onClick, style }) => {
   const [pressed, setPressed] = useState(false);
@@ -15,9 +16,9 @@ const PixelImageButton = ({ imgSrc, width = 128, height = 64, onClick, style }) 
       style={{
         width,
         height,
-        background: `url(${imgSrc}) no-repeat center/100% 100%`,
+        background: `url(${imgSrc}) repeat center/100% 100%`,
         border: "none",
-        cursor: "pointer",
+        cursor: "cursorp",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

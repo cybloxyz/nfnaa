@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+import "../../reason.css";
+
 import { useState } from "react";
 
 import { FiMoon, FiSun } from "react-icons/fi";
@@ -7,7 +9,7 @@ import { FiMoon, FiSun } from "react-icons/fi";
 
 const TOGGLE_CLASSES =
 
-  "text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-3 md:py-1.5 transition-colors relative z-10";
+  "text-sm font-medium flex items-center gap-2 px-6 md:pl-3 md:pr-3.5 py-3 md:py-1.5 transition-colors relative z-10";
 
 
 const Example = () => {
@@ -18,9 +20,9 @@ const Example = () => {
 
     <div
 
-      className={`grid h-[200px] place-content-center px-4 transition-colors ${
+      className={`grid h-[300px] place-content-center px-4 transition-colors ${
 
-        selected === "light" ? "bg-white" : "bg-slate-900"
+        selected === "light" ? "default-bg1" : "default-bg"
 
       }`}
 
@@ -45,7 +47,7 @@ const SliderToggle = ({ selected, setSelected }) => {
 
         className={`${TOGGLE_CLASSES} ${
 
-          selected === "light" ? "text-white" : "text-slate-300"
+          selected === "light" ? "text-yellow-900" : "text-yellow-300"
 
         }`}
 
@@ -67,7 +69,7 @@ const SliderToggle = ({ selected, setSelected }) => {
 
         className={`${TOGGLE_CLASSES} ${
 
-          selected === "dark" ? "text-white" : "text-slate-800"
+          selected === "dark" ? "text-black" : "text-slate-800"
 
         }`}
 
@@ -99,9 +101,9 @@ const SliderToggle = ({ selected, setSelected }) => {
 
           layout
 
-          transition={{ type: "spring", damping: 15, stiffness: 250 }}
+          transition={{ type: "spring", damping: 12, stiffness: 220 }}
 
-          className="h-full w-1/2 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600"
+          className="h-full w-1/2 rounded-full bg-gradient-to-r from-yellow-300 to-blue-800"
 
         />
 
