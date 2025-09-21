@@ -27,7 +27,7 @@ function FAQs({ language }) {
       {
         question: "What is BentoBox?✮⋆˙",
         answer:
-              "BentoBox is a creative service platform I built. Through BentoBox, you can order various services all in one place: custom illustrations, personalized t-shirts, interactive websites, game development, and custom stickers. One BentoBox = many creative solutions. ",
+              "BentoBox is a creative service platform I built. Through BentoBox, you can order various services all in one place: custom illustrations, personalized t-shirts, interactive websites, game development, and custom stickers. One BentoBox = many creative solutions. [BentoBox is still building] ",
       },
       {
         question: "Where can i find BentoBox?✮⋆˙",
@@ -42,7 +42,7 @@ function FAQs({ language }) {
       {
         question: "Apa itu BentoBox?✮⋆˙",
         answer:
-              "BentoBox adalah platform layanan kreatif yang aku buat. Melalui BentoBox, kamu bisa memesan berbagai jasa dalam satu tempat: ilustrasi custom, kaos desain khusus, website interaktif sesuai keinginan, pengembangan game, hingga stiker custom. Jadi, satu BentoBox = banyak solusi kreatif.",
+              "BentoBox adalah platform layanan kreatif yang aku buat. Melalui BentoBox, kamu bisa memesan berbagai jasa dalam satu tempat: ilustrasi custom, kaos desain khusus, website interaktif sesuai keinginan, pengembangan game, hingga stiker custom. Jadi, satu BentoBox = banyak solusi kreatif. [BentoBox masih dalam pembangunan] ",
       },
       {
         question: "Dimana aku bisa menemukan BentoBox?✮⋆˙",

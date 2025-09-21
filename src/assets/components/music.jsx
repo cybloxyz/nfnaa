@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./music.css";
 import song1 from "../images/m2.png";
 import song2 from "../images/m1.png";
@@ -11,6 +11,17 @@ const Music = ({ theme, setTheme }) => {
     light: song2,
   };
 
+const navbarSong = () => {
+  const audioRef = useRef(new Audio(currentSong));
+
+  const handlePlay = () => {
+  audioRef.current.play().catch(err => {
+    console.log("audio tidak bisa diputar", err);
+  });
+
+}
+
+}
   // Ambil lagu sesuai theme, default ke light
   const currentSong = songs[theme] || song2;
 

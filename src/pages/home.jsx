@@ -25,7 +25,9 @@ import ThemeNotif from "@/assets/components/notif";
 import LogoLoop from "../assets/components/minelogoloop";
 
 const images = [
-  { src: Tob, description: {en: `The Obscuranode`, id: `The Obscuranode`}, path: "/contact" },
+  { src: Tob, description: {en: `The Obscuranode
+                                 [still building]`, id: `The Obscuranode
+                                                         [masih dibuat]`}, path: "/contact" },
   { src: Plane, description: 
                            {en: `dadiwantthis
                                   i am not forcing it is just
@@ -33,8 +35,10 @@ const images = [
                             id: `dadiwantthis
                                  bukan memaksa, cuman presentasi`}, 
                             path: "https://dadiwantthis.vercel.app" },
-  { src: H, description: {en: `music is ⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖`, id: `musik adalah ⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖`}, path: "/about" },
-  { src: zew, description: {en:`Trashformers - 0 waste`, id:`Trashformers-0 sampah`}, path: "https://zerowastehero.vercel.app" },
+   { src: Plane, description: {en:`none`, id:`belum ada`}, path: "/contact" },
+  { src: zew, description: {en:`Trashformers - 0 waste
+                                [still in progress]`, id:`Trashformers-0 sampah
+                                                          [masih dalam proses]`}, path: "https://zerowastehero.vercel.app" },
   { src: Plane, description: {en:`none`, id:`belum ada`}, path: "/contact" },
 ];
 
