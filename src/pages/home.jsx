@@ -87,6 +87,7 @@ const Space = () => {
           Reserved.`,
                  id: `🛸 Nafisa Nailal Husna. Hak Dilindungi Undang-Undang`
   }
+  const disc = {en: "this part is still in progress...", id: "bagian ini masih dalam proses..."}
 
   // ====== Background Music berubah sesuai theme ======
   useEffect(() => {
@@ -224,7 +225,9 @@ const Space = () => {
             src={Bb}
             className="hover:scale-110 transition-transform duration-300 mb-18"
           />
+
         </div>
+                 <h1 className="text-xl text-white drop-shadow-lg">{disc[language]}</h1>
         <Card language={language} setLanguage={setLanguage}/>
       </section>
 
