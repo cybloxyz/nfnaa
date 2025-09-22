@@ -140,7 +140,7 @@ const Space = () => {
     <div
       className={`${
         theme === "dark" ? "default-bg" : "default-bg1"
-      } relative cursorp`}
+      } relative cursorp  transition-colors duration-500 ease-in-out`}
     >
       <ThemeNotif language={language} setLanguage={setLanguage} />
       <Music theme={theme} setTheme={setTheme}/>
