@@ -23,23 +23,26 @@ import Card from "../components/bentocard";
 import Carr from "../assets/components/carrousel";
 import ThemeNotif from "@/assets/components/notif";
 import LogoLoop from "../assets/components/minelogoloop";
+import Blk from "../assets/images/block.jpeg";
 
 const images = [
-  { src: Tob, description: {en: `The Obscuranode
-                                 [still building]`, id: `The Obscuranode
-                                                         [masih dibuat]`}, path: "/contact" },
+
   { src: Plane, description: 
                            {en: `dadiwantthis
+
                                   i am not forcing it is just
                                   a presentation`,
                             id: `dadiwantthis
+
                                  bukan memaksa, cuman presentasi`}, 
                             path: "https://dadiwantthis.vercel.app" },
-   { src: Plane, description: {en:`none`, id:`belum ada`}, path: "/contact" },
   { src: zew, description: {en:`Trashformers - 0 waste
+
                                 [still in progress]`, id:`Trashformers-0 sampah
+                                
                                                           [masih dalam proses]`}, path: "https://zerowastehero.vercel.app" },
-  { src: Plane, description: {en:`none`, id:`belum ada`}, path: "/contact" },
+  { src: Blk, description: {en:`none`, id:`belum ada`}},
+  { src: Blk, description: {en:`none`, id:`belum ada`}},
 ];
 
 const Space = () => {
