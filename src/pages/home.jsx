@@ -24,6 +24,7 @@ import Carr from "../assets/components/carrousel";
 import ThemeNotif from "@/assets/components/notif";
 import LogoLoop from "../assets/components/minelogoloop";
 import Blk from "../assets/images/block.jpeg";
+import boy from "../assets/images/1.png";
 
 const images = [
 
@@ -41,7 +42,11 @@ const images = [
                                 [still in progress]`, id:`Trashformers-0 sampah
                                 
                                                           [masih dalam proses]`}, path: "https://zerowastehero.vercel.app" },
-  { src: Blk, description: {en:`none`, id:`belum ada`}},
+  { src: boy, description: {en:`Confess Coercion
+    
+                                make him say yes! no matter what`, id:`Confess Coercion
+                                                                   
+                                                                        buat dia bilang iya, apapun itu!`}, path: "https://github.com/cybloxyz/ConfessCoercion"},
   { src: Blk, description: {en:`none`, id:`belum ada`}},
 ];
 

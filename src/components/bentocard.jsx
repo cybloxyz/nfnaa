@@ -19,21 +19,21 @@ const Bento = ({language, setLanguage}) => {
                                 sm:rounded-3xl rounded-2xl bento-square  backdrop-blur-lg img-hover
                                 flex items-center justify-center">
                  <h1 className='sm:text-4xl text-sm flex items-center justify-center'>
-                    {sec1[language]}
+                    
                  </h1>
                 </div>             
                 <div className="sm:col-span-4 sm:row-span-4 
                                 col-span-2 row-span-2 
                                 sm:rounded-3xl rounded-2xl bento-square  backdrop-blur-lg img-hover  flex items-center justify-center">
                  <h1 className='sm:text-4xl text-sm'>
-                    {sec2[language]}
+                    
                  </h1>
                 </div> 
                 <div className="sm:col-span-1 sm:row-span-3 
                                 col-span-1 row-span-3 
                                 sm:rounded-3xl rounded-2xl bento-square  backdrop-blur-lg img-hover flex justify-center items-center">
                  <h1 className='sm:text-4xl text-sm'>
-                    {sec3[language]}
+                    
                  </h1>
                 </div> 
                 <div className="sm:col-span-3 sm:row-span-3 
