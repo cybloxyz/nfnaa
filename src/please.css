@@ -162,6 +162,11 @@ html, body {
   overflow-wrap: break-word;
 }
 
+.resimg {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* crop biar tetap rapi */
+}
 
 
 .dadplease-typing2 {
@@ -216,9 +221,8 @@ html, body {
   justify-content: flex-start; /* mulai dari kiri */
   gap: 6px;
   flex-wrap: wrap;
-  margin-top: 22vw;
-  margin-bottom: 16vw;
-  margin-right: 2vw;
+  margin-top: 22vh;
+  margin-bottom: 16vh;
   width: 100%;  /* jangan melebar lebih dari layar */
 }
 

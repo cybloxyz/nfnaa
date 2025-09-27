@@ -1,0 +1,28 @@
+  useEffect(() => {
+    const typingSounds = [];
+    for (let j = 0; j < 2; j++) {
+      const audio = new Audio(typingSound);
+      audio.volume = 0.3;
+      typingSounds.push(audio);
+    }
+
+    let soundIndex = 0;
+    let i = 0;
+    const interval = setInterval(() => {
+      setText(fullText[language].slice(0, i + 1));
+
+      const sound = typingSounds[soundIndex];
+      sound.currentTime = 0;
+      sound.play().catch(() => {});
+      soundIndex = (soundIndex + 1) % typingSounds.length;
+
+      i++;
+      if (i === fullText[language].length) {
+        clearInterval(interval);
+      }
+    }, 80);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [language]);

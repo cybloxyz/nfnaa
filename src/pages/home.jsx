@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import typingSound from "../assets/sounds/typingcut.mp3";
 import pixsong from "../assets/sounds/midnight.mp3";
 import dream from "../assets/sounds/dreams.mp3";
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 import "../../Minecraft_Regular/stylesheet.css";
 import "../please.css";
@@ -64,12 +65,16 @@ const Space = () => {
                id: `klik untuk lihat proyek!`
   }
   const [theme, setTheme] = useState("dark"); // light / dark
-  const fullText = {
-                  en:  `welcome to nfnaa's space!`,
-                  id: `selamat datang di nfnaa's space!`};
+  const [ttext] = useTypewriter({
+    words: ['Developer', 'Designer', 'Student', 'Chemist', 'Challenger'],
+    loop: {},
+    typeSpeed: 120,
+    deleteSpeed: 80,
+  });
   const bio = {
            en:  `
-              Hi, I’m Nafisa Nailal Husna, 11th grade student who loves code and chem!
+              Hi, I’m Nafisa Nailal Husna, 
+              11th grade student who loves code and chem!
 
               I’m a passionate learner and aspiring innovator 
               with a deep interest in technology, design, and problem-solving.
@@ -118,40 +123,12 @@ const Space = () => {
   }, [theme]);
 
   // ====== Typing effect ======
-  useEffect(() => {
-    const typingSounds = [];
-    for (let j = 0; j < 2; j++) {
-      const audio = new Audio(typingSound);
-      audio.volume = 0.3;
-      typingSounds.push(audio);
-    }
-
-    let soundIndex = 0;
-    let i = 0;
-    const interval = setInterval(() => {
-      setText(fullText[language].slice(0, i + 1));
-
-      const sound = typingSounds[soundIndex];
-      sound.currentTime = 0;
-      sound.play().catch(() => {});
-      soundIndex = (soundIndex + 1) % typingSounds.length;
-
-      i++;
-      if (i === fullText[language].length) {
-        clearInterval(interval);
-      }
-    }, 80);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [language]);
 
   return (
     <div
       className={`${
         theme === "dark" ? "default-bg" : "default-bg1"
-      } relative cursorp  transition-colors duration-500 ease-in-out`}
+      } relative transition-colors duration-500 ease-in-out`}
     >
       <ThemeNotif language={language} setLanguage={setLanguage} />
       <Music theme={theme} setTheme={setTheme}/>
@@ -159,16 +136,22 @@ const Space = () => {
       
 
       {/* ====== Baris 1 ====== */}
-      <section id="Home" className="h-500 flex flex-col sec">
-        <div className="flex-container">
-          <img className="responsive-img" src={Plane} alt="plane" />
-          <h1 className={`dadplease-typing ${theme === "dark" ? "text-white" : "text-blue-900"}`}>{text}</h1>
-        </div>
-      <section>
+<h1 className="text-white ml-[5%] my-6 leading-relaxed break-words whitespace-normal mt-72">
+  Hey! I'm a{" "}
+  <span className="font-bold text-sky-400">{ttext}</span>
+  <span className="text-blue-500">
+    <Cursor cursorStyle="★" />
+  </span>
+</h1>
+
+
+
+
+      <section className="mt-80">
           <LogoLoop />
       </section>
       
-      </section>
+
 
       <section id="Me" className="h-400 flex flex-col justify-center items-center">
         <div className="flex justify-center items-center mt-24 sm:mb-64 mb-32 relative group">
@@ -181,7 +164,7 @@ const Space = () => {
           />
 
           {/* Teks di atas gambar */}
-          <div className="absolute sm:top-48 sm:left-48 top-16 left-16 transition-transform duration-300 group-hover:scale-110">
+          <div className="absolute sm:top-48 sm:left-48 md:top-36 md:left-36 top-16 left-16 transition-transform duration-300 group-hover:scale-110">
             <h1 className={`sm:text-6xl text-2xl font-bold drop-shadow-lg ${theme === "dark" ? "text-white" : "text-blue-900" }`}>
               {greet[language]}
             </h1>
