@@ -1,8 +1,8 @@
 .navbar {
   position: fixed;
-  top: 30px;               /* sedikit dari atas biar efek floating */
-  left: 30px;
-  right: 30px;
+  top: 3%;               /* sedikit dari atas biar efek floating */
+  left: 3%;
+  right: 3%;
   height: 70px;            /* tinggi navbar */
   background: rgba(255, 255, 255, 0.8); /* putih semi-transparan 80% */
   display: flex;
@@ -10,6 +10,7 @@
   justify-content: space-between;
   padding: 0 30px;
   border-radius: 18px;     /* rounded */
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px); /* biar teks lebih jelas */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* efek floating */
   z-index: 1000;
@@ -47,9 +48,9 @@
 @media (max-width: 768px) {
 .navbar {
   position: fixed;
-  top: 20px;               /* sedikit dari atas biar efek floating */
-  left: 20px;
-  right: 20px;
+  top: 2%;               /* sedikit dari atas biar efek floating */
+  left: 2%;
+  right: 2%;
   height: 50px;            /* tinggi navbar */
   background: rgba(255, 255, 255, 0.8); /* putih semi-transparan 80% */
   display: flex;
@@ -57,6 +58,145 @@
   justify-content: space-between;
   padding: 0 10px;
   border-radius: 14px;     /* rounded */
+  backdrop-filter: blur(6px); /* biar teks lebih jelas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* efek floating */
+  z-index: 1000;
+  font-family: "Minecraft Regular", sans-serif;
+  font-weight: bold;
+  color: #000;             /* teks hitam supaya kontras */
+}
+
+.nav-logo {
+  font-family: "Minecraft Regular";
+  font-size: 10px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 4px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-family: "Minecraft Regular";
+  font-size: 8px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #7fc6d3;
+}
+}
+
+@media (max-width: 960px) {
+.navbar {
+  position: fixed;
+  top: 2%;               /* sedikit dari atas biar efek floating */
+  left: 6%;
+  right: 6%;
+  height: 50px;            /* tinggi navbar */
+  background: rgba(255, 255, 255, 0.8); /* putih semi-transparan 80% */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 14px;     /* rounded */
+  backdrop-filter: blur(6px); /* biar teks lebih jelas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* efek floating */
+  z-index: 1000;
+  font-family: "Minecraft Regular", sans-serif;
+  font-weight: bold;
+  color: #000;             /* teks hitam supaya kontras */
+}
+
+.nav-logo {
+  font-family: "Minecraft Regular";
+  font-size: 10px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 4px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-family: "Minecraft Regular";
+  font-size: 8px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #7fc6d3;
+}
+}
+
+@media (max-width: 768px) {
+.navbar {
+  position: fixed;
+  top: 2%;               /* sedikit dari atas biar efek floating */
+  left: 5%;
+  right: 5%;
+  height: 50px;            /* tinggi navbar */
+  background: rgba(255, 255, 255, 0.8); /* putih semi-transparan 80% */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 14px;     /* rounded */
+  backdrop-filter: blur(6px); /* biar teks lebih jelas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* efek floating */
+  z-index: 1000;
+  font-family: "Minecraft Regular", sans-serif;
+  font-weight: bold;
+  color: #000;             /* teks hitam supaya kontras */
+}
+
+.nav-logo {
+  font-family: "Minecraft Regular";
+  font-size: 10px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 4px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-family: "Minecraft Regular";
+  font-size: 8px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #7fc6d3;
+}
+}
+
+@media (max-width: 1080px) {
+.navbar {
+  position: fixed;
+  top: 2%;               /* sedikit dari atas biar efek floating */
+  left: 3%;
+  right: 3%;
+  height: 50px;            /* tinggi navbar */
+  background: rgba(255, 255, 255, 0.8); /* putih semi-transparan 80% */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-radius: 14px;     /* rounded */
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px); /* biar teks lebih jelas */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* efek floating */
   z-index: 1000;

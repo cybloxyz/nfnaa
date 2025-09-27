@@ -1,3 +1,117 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.reason-title {
+  font-family: "Minecraft Regular";
+  font-size: 40px; /* laptop default */
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  padding: 0 6px;
+}
+
+.reason-paragraph {
+  font-family: "Minecraft Regular";
+  font-size: 20px; /* laptop default */
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.reason-typing {
+  font-family: "Minecraft Regular";
+  font-size: 48px; /* default desktop */
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-align: left;
+  align-items: flex-start;
+  padding: 0 6px;
+}
+
+/* kalau layar <= 768px (HP/Tablet) */
+@media (max-width: 768px) {
+  .reason-title {
+    font-size: 20px;
+  }
+
+  .reason-paragraph {
+    font-size: 14px;
+  }
+}
+
+.default-bg {
+  min-height: 100vh;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(
+    180deg,
+    #13192c,
+    #1e2749,
+    #192a51,
+    #273469,
+    #084aa0,
+    #0096c7,
+    #78a7d3
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.default-bg1 {
+  min-height: 100vh;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(
+    180deg,
+    #cddafd,
+    #d2deff,
+    #ffc1d8,
+    #ffc8dd,
+    #ffc8dd,
+    #cdb4db
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges; /* untuk kompatibilitas browser */
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-2px) rotate(5deg); }
+  50% { transform: translateY(0) rotate(-5deg); }
+  75% { transform: translateY(-2px) rotate(5deg); }
+}
+
+.wiggle {
+  animation: wiggle 0.3s ease-in-out infinite;
+}
+
+
+
+
 .dadplease-title {
   font-family: "Minecraft Regular";
   font-size: 56px; /* default desktop */
@@ -28,16 +142,27 @@
   margin: 0;
 }
 
+.sec {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .dadplease-typing {
   font-family: "Minecraft Regular";
-  font-size: 48px; /* default desktop */
+  font-size: 48px;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.377);
+  text-shadow: 2px 2px 4px black;
   text-align: left;
-  align-items: flex-start;
-  justify-self: start;
   padding: 0 6px;
+
+  max-width: 100%;       /* jangan pernah lebih dari layar */
+  display: block;        /* paksa behave seperti block normal */
+  white-space: normal;   /* biar bisa turun ke bawah */
+  word-break: break-word; 
+  overflow-wrap: break-word;
 }
+
+
 
 .dadplease-typing2 {
   font-family: "Minecraft Regular";
@@ -86,24 +211,28 @@
 
 .flex-container {
   position: relative;
-  display: flex;           /* aktifkan flexbox */
-  align-items: center;     /* biar teks & gambar sejajar vertikal */
-  justify-content: end; /* biar posisinya rata tengah */
-  gap: 6px;               /* jarak antara teks & gambar */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* mulai dari kiri */
+  gap: 6px;
   flex-wrap: wrap;
   margin-top: 22vw;
   margin-bottom: 16vw;
   margin-right: 2vw;
+  width: 100%;  /* jangan melebar lebih dari layar */
 }
 
-.flex-container1 {
+
+.flex-container {
   position: relative;
-  display: flex;           /* aktifkan flexbox */
-  align-items: center;     /* biar teks & gambar sejajar vertikal */
-  justify-content: start; /* biar posisinya rata tengah */
-  gap: 6px;               /* jarak antara teks & gambar */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 6px;
   flex-wrap: wrap;
-  margin: 2vw;
+  margin-top: 22vh;   /* tadinya 22vw */
+  margin-bottom: 16vh; /* tadinya 16vw */
+  margin-right: 2vw;  /* ini masih oke */
 }
 
 .flex-container2 {
@@ -188,6 +317,8 @@
 }
 }
 
-body {
-  @apply transition-colors duration-500 ease-in-out;
+.typing-container {
+  white-space: normal;   /* teks bisa turun baris */
+  overflow-wrap: break-word; /* pecah kata kalau panjang */
+  word-break: break-word;    /* fallback */
 }

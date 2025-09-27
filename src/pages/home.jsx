@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import typingSound from "../assets/sounds/typingcut.mp3";
 import pixsong from "../assets/sounds/midnight.mp3";
 import dream from "../assets/sounds/dreams.mp3";
+
 import "../../Minecraft_Regular/stylesheet.css";
 import "../please.css";
 import "../reason.css";
+
 import Plane from "../assets/images/plane.png";
 import Humf from "../assets/images/humf.png";
 import Tob from "../assets/images/tob.png";
@@ -157,7 +159,7 @@ const Space = () => {
       
 
       {/* ====== Baris 1 ====== */}
-      <section id="Home" className="h-500 flex flex-col">
+      <section id="Home" className="h-500 flex flex-col sec">
         <div className="flex-container">
           <img className="responsive-img" src={Plane} alt="plane" />
           <h1 className={`dadplease-typing ${theme === "dark" ? "text-white" : "text-blue-900"}`}>{text}</h1>
@@ -233,10 +235,10 @@ const Space = () => {
 
         </div>
                  <h1 className="text-xl text-white drop-shadow-lg">{disc[language]}</h1>
-        <Card language={language} setLanguage={setLanguage}/>
+       
       </section>
 
-      <img src={R} />
+ 
 
       <div className="flex items-center justify-center mt-16">
         <img
