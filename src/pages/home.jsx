@@ -76,19 +76,11 @@ const Space = () => {
               Hi, I’m Nafisa Nailal Husna, 
               11th grade student who loves code and chem!
 
-              I’m a passionate learner and aspiring innovator 
-              with a deep interest in technology, design, and problem-solving.
-              I enjoy building creative projects that combine coding, design, 
-              and real-world impact
               `,
           id: `
               hai! saya nafisa nailal husna, siswi kelas 11 yang
               sangat menyukai kimia dan kode
 
-              passion saya terletak pada desain, kreatifitas, 
-              teknologi dan penyelesaian masalah
-              menciptakan inovasi dan solusi menghadapi
-              tantangan digital adalah apa yang saya usahakan!
               `};
   const footer ={
                 en: ` ⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖ Built with stress, but jk ⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖`,
@@ -160,16 +152,16 @@ const Space = () => {
             src={Me}
             height="1000px"
             width="1200px"
-            className="transition-transform duration-300 group-hover:scale-110 drop-shadow-xl"
+            className="transition-transform duration-300 group-hover:scale-110 drop-shadow-xl mb-6 w-80 sm:w-[600px] md:w-[860px] lg:w-[1000px]"
           />
 
           {/* Teks di atas gambar */}
-          <div className="absolute sm:top-48 sm:left-48 md:top-36 md:left-36 top-16 left-16 transition-transform duration-300 group-hover:scale-110">
-            <h1 className={`sm:text-6xl text-2xl font-bold drop-shadow-lg ${theme === "dark" ? "text-white" : "text-blue-900" }`}>
+          <div className="absolute sm:top-36 sm:left-36 md:top-36 md:left-36 top-10 left-10 transition-transform duration-300 group-hover:scale-110">
+            <h1 className={`sm:text-3xl md:text-5xl lg:text-6xl text-xl font-bold drop-shadow-lg ${theme === "dark" ? "text-white" : "text-blue-900" }`}>
               {greet[language]}
             </h1>
 
-            <p className={`whitespace-pre-line mt-2 sm:text-2xl text-[8px] max-w-xl ${theme === "dark" ? "text-gray-200" : "text-blue-900"}`}>
+            <p className={`whitespace-pre-line md:mt-1 lg:mt-2 mt-0 sm:text-xl md:text-xl lg:text-3xl text-sm text-[8px] max-w-xl ${theme === "dark" ? "text-gray-200" : "text-blue-900"}`}>
               {bio[language]}
             </p>
           </div>
@@ -191,7 +183,8 @@ const Space = () => {
       <section id="Project" className="h-120 flex flex-col justify-center items-center mt-64 pb-64 mb-16">
         <img
           src={Pr}
-          className="hover:scale-110 transition-transform duration-300 mb-6"
+          alt="project"
+          className="transform hover:scale-110 transition-transform duration-300 mb-6 w-80 sm:w-40 md:w-48 lg:w-56"
         />
         <p className={`sm:text-2xl text-sm text-white mb-12 ${theme === "dark" ? "text-white" : "text-blue-600"}`}>
           {here[language]}
@@ -213,7 +206,7 @@ const Space = () => {
         <div className="items-start justify-center mx-1 sm:mt-48 mt-32 sm:mb-1 mb-0">
           <img
             src={Bb}
-            className="hover:scale-110 transition-transform duration-300 mb-18"
+            className="transform hover:scale-110 transition-transform duration-300 mb-6 w-80 sm:w-40 md:w-48 lg:w-56"
           />
 
         </div>
