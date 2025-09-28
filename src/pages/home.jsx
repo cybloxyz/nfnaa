@@ -152,7 +152,7 @@ const Space = () => {
             src={Me}
             height="1000px"
             width="1200px"
-            className="transition-transform duration-300 group-hover:scale-110 drop-shadow-xl mb-6 w-80 sm:w-[600px] md:w-[860px] lg:w-[1000px]"
+            className="transition-transform duration-300 group-hover:scale-110 drop-shadow-xl mb-6 w-80 sm:w-[700px] md:w-[860px] lg:w-[1000px]"
           />
 
           {/* Teks di atas gambar */}
@@ -184,7 +184,7 @@ const Space = () => {
         <img
           src={Pr}
           alt="project"
-          className="transform hover:scale-110 transition-transform duration-300 mb-6 w-80 sm:w-40 md:w-48 lg:w-56"
+          className="transform hover:scale-110 transition-transform duration-300 mb-6 sm:w-[700px] md:w-[860px] lg:w-[1000px]"
         />
         <p className={`sm:text-2xl text-sm text-white mb-12 ${theme === "dark" ? "text-white" : "text-blue-600"}`}>
           {here[language]}
@@ -206,7 +206,7 @@ const Space = () => {
         <div className="items-start justify-center mx-1 sm:mt-48 mt-32 sm:mb-1 mb-0">
           <img
             src={Bb}
-            className="transform hover:scale-110 transition-transform duration-300 mb-6 w-80 sm:w-40 md:w-48 lg:w-56"
+            className="transform hover:scale-110 transition-transform duration-300 mb-6sm:w-[700px] md:w-[860px] lg:w-[900px]"
           />
 
         </div>
