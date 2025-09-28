@@ -128,6 +128,7 @@ const Space = () => {
       
 
       {/* ====== Baris 1 ====== */}
+<section id="Home">
 <h1 className="text-white ml-[5%] my-6 leading-relaxed break-words whitespace-normal mt-72">
   Hey! I'm a{" "}
   <span className="font-bold text-sky-400">{ttext}</span>
@@ -135,6 +136,7 @@ const Space = () => {
     <Cursor cursorStyle="★" />
   </span>
 </h1>
+</section>
 
 
 
@@ -184,7 +186,7 @@ const Space = () => {
         <img
           src={Pr}
           alt="project"
-          className="transform hover:scale-110 transition-transform duration-300 mb-6 sm:w-[700px] md:w-[860px] lg:w-[1000px]"
+          className="transform hover:scale-110 transition-transform duration-300 mb-6 sm:w-[700px] md:w-[860px] lg:w-[800px]"
         />
         <p className={`sm:text-2xl text-sm text-white mb-12 ${theme === "dark" ? "text-white" : "text-blue-600"}`}>
           {here[language]}
@@ -206,12 +208,11 @@ const Space = () => {
         <div className="items-start justify-center mx-1 sm:mt-48 mt-32 sm:mb-1 mb-0">
           <img
             src={Bb}
-            className="transform hover:scale-110 transition-transform duration-300 mb-6sm:w-[700px] md:w-[860px] lg:w-[900px]"
+            className="transform hover:scale-110 transition-transform duration-300 mb-6sm:w-[700px] md:w-[860px] lg:w-[800px]"
           />
-
         </div>
                  <h1 className="text-xl text-white drop-shadow-lg">{disc[language]}</h1>
-       
+                 <div className="bg-white/70 backdrop-blur-lg drop-shadow-lg rounded-3xl p-4 m-24 h-80 lg:w-[900px] md:w-[700px] sm:w-[500px] w-[250px] "></div>
       </section>
 
  
