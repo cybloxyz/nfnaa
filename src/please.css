@@ -327,9 +327,7 @@ html, body {
   word-break: break-word;    /* fallback */
 }
 
-* {
-  outline: 1px solid red; /* buat cek elemen yang meluber */
-}
+
 
 html, body {
   overflow-x: hidden;
