@@ -47,7 +47,6 @@ html, body {
 .default-bg {
   min-height: 100vh;
   width: 100%;
-  height: auto;
   background: linear-gradient(
     180deg,
     #13192c,
@@ -62,12 +61,12 @@ html, body {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  overflow-x: hidden; /* biar nggak lari ke samping */
 }
 
 .default-bg1 {
   min-height: 100vh;
   width: 100%;
-  height: auto;
   background: linear-gradient(
     180deg,
     #cddafd,
@@ -81,7 +80,9 @@ html, body {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  overflow-x: hidden; /* sama, cegah overflow horizontal */
 }
+
 
 .button {
   image-rendering: pixelated;

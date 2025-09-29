@@ -128,18 +128,18 @@ const Space = () => {
       
 
       {/* ====== Baris 1 ====== */}
-<section id="Home">
-<h1 className="text-white ml-[5%] my-6 leading-relaxed break-words whitespace-normal mt-72">
-  Hey! I'm a{" "}
-  <span className="font-bold text-sky-400">{ttext}</span>
-  <span className="text-blue-500">
-    <Cursor cursorStyle="★" />
-  </span>
-</h1>
+<section
+  id="Home"
+  className="min-h-screen w-full overflow-x-hidden flex items-center bg-transparent"
+>
+  <h1 className="text-white px-6 my-6 leading-relaxed break-words whitespace-normal">
+    Hey! I'm a{" "}
+    <span className="font-bold text-sky-400">{ttext}</span>
+    <span className="text-blue-500">
+      <Cursor cursorStyle="★" />
+    </span>
+  </h1>
 </section>
-
-
-
 
       <section className="mt-80">
           <LogoLoop />
@@ -148,17 +148,17 @@ const Space = () => {
 
 
       <section id="Me" className="h-400 flex flex-col justify-center items-center">
-        <div className="flex justify-center items-center mt-24 sm:mb-64 mb-32 relative group">
+        <div className="flex justify-center items-center lg:mt-24 md:mt-24 sm:mb-64 mt-16 mb-32 relative group">
           {/* Gambar + efek hover */}
           <img
             src={Me}
             height="1000px"
             width="1200px"
-            className="transition-transform duration-300 group-hover:scale-110 drop-shadow-xl mb-6 w-80 sm:w-[700px] md:w-[860px] lg:w-[1000px]"
+            className="transition-transform duration-300 group-hover:scale-110 drop-shadow-xl mb-6 w-[350px] sm:w-[700px] md:w-[860px] lg:w-[1000px]"
           />
 
           {/* Teks di atas gambar */}
-          <div className="absolute sm:top-36 sm:left-36 md:top-36 md:left-36 top-10 left-10 transition-transform duration-300 group-hover:scale-110">
+          <div className="absolute sm:top-36 sm:left-36 md:top-36 md:left-36 top-14 left-10 transition-transform duration-300 group-hover:scale-110">
             <h1 className={`sm:text-3xl md:text-5xl lg:text-6xl text-xl font-bold drop-shadow-lg ${theme === "dark" ? "text-white" : "text-blue-900" }`}>
               {greet[language]}
             </h1>
@@ -186,7 +186,7 @@ const Space = () => {
         <img
           src={Pr}
           alt="project"
-          className="transform hover:scale-110 transition-transform duration-300 mb-6 sm:w-[700px] md:w-[860px] lg:w-[800px]"
+          className="transform hover:scale-110 transition-transform duration-300 mb-6 w-[400px] md:w-[500px] lg:w-[800px]"
         />
         <p className={`sm:text-2xl text-sm text-white mb-12 ${theme === "dark" ? "text-white" : "text-blue-600"}`}>
           {here[language]}
@@ -208,11 +208,11 @@ const Space = () => {
         <div className="items-start justify-center mx-1 sm:mt-48 mt-32 sm:mb-1 mb-0">
           <img
             src={Bb}
-            className="transform hover:scale-110 transition-transform duration-300 mb-6sm:w-[700px] md:w-[860px] lg:w-[800px]"
+            className="transform hover:scale-110 transition-transform duration-300 mb-6 w-[400px] md:w-[860px] lg:w-[800px]"
           />
         </div>
                  <h1 className="text-xl text-white drop-shadow-lg">{disc[language]}</h1>
-                 <div className="bg-white/70 backdrop-blur-lg drop-shadow-lg rounded-3xl p-4 m-24 h-80 lg:w-[900px] md:w-[700px] sm:w-[500px] w-[250px] "></div>
+                 <div className="bg-white/70 backdrop-blur-lg drop-shadow-lg rounded-3xl p-4 mx-24 mt-16 mb-24 h-80 lg:w-[900px] md:w-[700px] sm:w-[500px] w-[300px] "></div>
       </section>
 
  
@@ -231,11 +231,11 @@ const Space = () => {
     </section> 
 
 
-      <footer className={`text-white text-center py-6 mt-10 ${theme === "dark" ? "bg-blue-900" : "bg-purple-700"}`}>
+      <footer className={`text-white text-center py-6 mt-10 lg:text-lg md:text-lg text-sm ${theme === "dark" ? "bg-blue-900" : "bg-purple-700"}`}>
         <p>
           © {new Date().getFullYear()} {rights[language]}
         </p>
-        <p className="text-sm text-gray-300">
+        <p className="lg:text-sm md:text-sm text-xs text-gray-300">
          {footer[language]}
         </p>
       </footer>
