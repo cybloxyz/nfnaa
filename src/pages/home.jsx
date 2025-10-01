@@ -122,24 +122,22 @@ const Space = () => {
         theme === "dark" ? "default-bg" : "default-bg1"
       } relative transition-colors duration-500 ease-in-out`}
     >
-      <ThemeNotif language={language} setLanguage={setLanguage} />
-      <Music theme={theme} setTheme={setTheme}/>
-      <Navbar theme={theme} setTheme={setTheme} language={language} setLanguage={setLanguage}/>
-      
+     
+     <Navbar language={language} setLanguage={setLanguage}/>
+     <Music theme={theme} setTheme={setTheme} />
+     <ThemeNotif language={language} setLanguage={setLanguage} />
 
       {/* ====== Baris 1 ====== */}
-<section
-  id="Home"
-  className="min-h-screen w-full overflow-x-hidden flex items-center bg-transparent"
->
-  <h1 className="text-white px-6 my-6 leading-relaxed break-words whitespace-normal">
+<div className="w-screen px-6 lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-md max-w-screen-sm lg:mx-auto md:mx-auto sm:mx-auto mx-auto mt-64">
+  <h1 className="text-white mt-16 leading-relaxed whitespace-normal lg:text-6xl md:text-5xl sm:text-4xl text-3xl col-span-1">
     Hey! I'm a{" "}
     <span className="font-bold text-sky-400">{ttext}</span>
     <span className="text-blue-500">
       <Cursor cursorStyle="★" />
     </span>
   </h1>
-</section>
+</div>
+
 
       <section className="mt-80">
           <LogoLoop />
@@ -212,7 +210,10 @@ const Space = () => {
           />
         </div>
                  <h1 className="text-xl text-white drop-shadow-lg">{disc[language]}</h1>
-                 <div className="bg-white/70 backdrop-blur-lg drop-shadow-lg rounded-3xl p-4 mx-24 mt-16 mb-24 h-80 lg:w-[900px] md:w-[700px] sm:w-[500px] w-[300px] "></div>
+                 <div className="bg-white/70 backdrop-blur-lg drop-shadow-lg rounded-3xl p-4 mx-24 mt-16 mb-24 h-80 lg:w-[900px] md:w-[700px] sm:w-[500px] w-[300px] flex flex-col justify-center  items-center gap-4">
+                   <button className="row-span-1 bg-white/80 backdrop-blur-lg drop-shadow-lg rounded-3xl h-16 w-64 border-0 outline-none focus:outline-none hover:scale-105 hover:border-transparent transition-transform duration-150"></button>
+                   <button className="row-span-1 bg-white/80 backdrop-blur-lg drop-shadow-lg rounded-3xl h-16 w-64 border-0 outline-none focus:outline-none hover:scale-105 hover:border-transparent transition-transform duration-150"></button>
+                 </div>
       </section>
 
  
