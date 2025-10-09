@@ -13,4 +13,4 @@ The reason why I made this project is because I needed a home for my journey—a
 
 As the journal begins, the main struggle was starting from scratch. I just began learning web development a few weeks before, so I had to face the basics head-on: HTML, CSS, JavaScript, and even trying out frameworks like React. I had to figure out responsive design, layouts that don’t break, and how to make my site look both clean and personal.
 
-[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+![nfnaa badge](https://img.shields.io/badge/nfnaa-origin-blue) 
