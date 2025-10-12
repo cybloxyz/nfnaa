@@ -101,7 +101,7 @@ const Space = () => {
       bgAudio = new Audio(dream);
     } else {
       bgAudio = new Audio(pixsong);
-    }
+    } 
 
     bgAudio.volume = 0.5;
     bgAudio.loop = true;
@@ -123,7 +123,7 @@ const Space = () => {
       } relative transition-colors duration-500 ease-in-out`}
     >
      
-     <Navbar language={language} setLanguage={setLanguage}/>
+     <Navbar language={language} setLanguage={setLanguage} theme={theme} setTheme={setTheme} />
      <Music theme={theme} setTheme={setTheme} />
      <ThemeNotif language={language} setLanguage={setLanguage} />
 
