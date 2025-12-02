@@ -123,6 +123,7 @@ const Space = () => {
      <ThemeNotif language={language} setLanguage={setLanguage} />
 
       {/* ====== Baris 1 ====== */}
+      <section id="Home">
 <div className="w-full px-6 mt-64 mx-12">
   <h1 className="text-white mt-16 leading-relaxed whitespace-normal lg:text-6xl md:text-5xl sm:text-4xl text-3xl col-span-1">
     Hey! I'm a{" "}
@@ -139,6 +140,7 @@ const Space = () => {
           <LogoLoop />
         </section>
       </div>
+      </section>
       
 
 
