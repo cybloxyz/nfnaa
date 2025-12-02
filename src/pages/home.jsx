@@ -8,16 +8,16 @@ import "../../Minecraft_Regular/stylesheet.css";
 import "../please.css";
 import "../reason.css";
 
-import Plane from "../assets/images/plane.png";
-import Humf from "../assets/images/humf.png";
-import Tob from "../assets/images/tob.png";
-import zew from "../assets/images/zew.png";
+import Plane from "../assets/images/plane.webp";
+import Humf from "../assets/images/humf.webp";
+import Tob from "../assets/images/tob.webp";
+import zew from "../assets/images/zew.webp";
 import Me from "../assets/images/mee.png";
-import Pr from "../assets/images/proj.png";
-import Bb from "../assets/images/bb.png";
-import R from "../assets/images/run.png";
-import S from "../assets/images/sp.png";
-import H from "../assets/images/headphones.png";
+import Pr from "../assets/images/proj.webp";
+import Bb from "../assets/images/bb.webp";
+import R from "../assets/images/run.webp";
+import S from "../assets/images/sp.webp";
+import H from "../assets/images/headphones.webp";
 import Navbar from "../assets/components/navbar";
 import Music from "../assets/components/music";
 import Faq from "../assets/components/faq";
@@ -26,8 +26,8 @@ import Card from "../components/bentocard";
 import Carr from "../assets/components/carrousel";
 import ThemeNotif from "@/assets/components/notif";
 import LogoLoop from "../assets/components/minelogoloop";
-import Blk from "../assets/images/block.jpeg";
-import boy from "../assets/images/1.png";
+import Blk from "../assets/images/block.webp";
+import boy from "../assets/images/1.webp";
 
 const images = [
 

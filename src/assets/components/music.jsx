@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import "./music.css";
-import song1 from "../images/m2.png"; // ganti jadi file audio beneran
-import song2 from "../images/m1.png"; // ganti jadi file audio beneran
+import song1 from "../images/m2.webp"; // ganti jadi file audio beneran
+import song2 from "../images/m1.webp"; // ganti jadi file audio beneran
 import { easeOut, motion } from "framer-motion";
 
 const Music = ({ theme }) => {
