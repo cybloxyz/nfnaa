@@ -39,7 +39,7 @@ body {
   display: block;
   place-items: center;
   min-height: 100vh;
-  cursor: url("/public/pixelchicken/Chicken\ Normal\ Select.cur"), auto;
+  cursor: url("/pixelchicken/Chicken\ Normal\ Select.cur"), auto;
 }
 
 h1 {
@@ -55,7 +55,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
-  cursor: url("/public/pixelchicken/Chicken\ Precision\ Select.cur"), pointer;
+  cursor: url("/pixelchicken/Chicken\ Precision\ Select.cur"), pointer;
   transition: border-color 0.25s;
 }
 button:hover {

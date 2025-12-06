@@ -14,8 +14,9 @@ import Me from "../assets/images/mee.png";
 import Pr from "../assets/images/proj.webp";
 import Bb from "../assets/images/bb.webp";
 import S from "../assets/images/sp.webp";
+
 import Navbar from "../assets/components/navbar";
-import Music from "../assets/components/music";
+import Music from "../assets/components/music"; 
 import Faq from "../assets/components/faq";
 import Card from "../components/bentocard";
 import Carr from "../assets/components/carrousel";
@@ -118,24 +119,26 @@ const Space = () => {
       } relative transition-colors duration-500 ease-in-out`}
     >
      
-     <Navbar language={language} setLanguage={setLanguage} theme={theme} setTheme={setTheme} />
-     <Music theme={theme} setTheme={setTheme} />
-     <ThemeNotif language={language} setLanguage={setLanguage} />
-
+     
       {/* ====== Baris 1 ====== */}
       <section id="Home">
-<div className="w-full px-6 mt-64 mx-12">
-  <h1 className="text-white mt-16 leading-relaxed whitespace-normal lg:text-6xl md:text-5xl sm:text-4xl text-3xl col-span-1">
+<div className="w-screen lg:px-16 md:px-6 px-6 mt-64 mx-12">
+  <h1 className={`mt-16 leading-relaxed whitespace-normal lg:text-6xl md:text-5xl sm:text-4xl text-3xl col-span-1 ${theme === "dark" ? "text-white" : "text-blue-900"}`}>
     Hey! I'm a{" "}
     <span className="font-bold text-sky-400">{ttext}</span>
     <span className="text-blue-500">
       <Cursor cursorStyle="★" />
     </span>
   </h1>
+
+      <Navbar language={language} setLanguage={setLanguage} theme={theme} setTheme={setTheme} />
+      <Music theme={theme} setTheme={setTheme} />
+      <ThemeNotif language={language} setLanguage={setLanguage} />
+
 </div>
 
 
-      <div className="mt-80 w-screen flex justify-center">
+      <div className="mt-96 w-24 flex justify-center">
         <section>
           <LogoLoop />
         </section>
@@ -210,7 +213,7 @@ const Space = () => {
         </div>
         <h1 className="text-xl text-white drop-shadow-lg">{disc[language]}</h1>
         
-        <Card/>
+        <Card language={language} setLanguage={setLanguage}/>
                  
                
       </section>

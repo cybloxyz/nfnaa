@@ -17,7 +17,7 @@ function Accordion({ question, answer }) {
         <span className="w-5 h-5 sm:w-6 sm:h-6">{isOpen ? "★" : "☆"} </span>
       </button>
       {isOpen && (
-        <p className="text-base sm:text-lg leading-6 sm:leading-7 font-thin">
+        <p className="text-base text-blue-900 sm:text-lg leading-6 sm:leading-7 font-thin">
           {answer}
         </p>
       )}
