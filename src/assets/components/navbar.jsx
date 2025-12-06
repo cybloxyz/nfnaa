@@ -1,6 +1,7 @@
 // Navbar.jsx
 import React from "react";
 import "./navbar.css";
+import "../../index.css";
 import { motion, easeOut } from "framer-motion";
 
 const Navbar = ({theme, setTheme, language, setLanguage}) => {

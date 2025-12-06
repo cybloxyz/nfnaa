@@ -34,17 +34,20 @@ console.log("Audio tidak bisa diputar:", err);
 };
 
 return ( <nav>
-<motion.img
-key={theme}
-className="song drop-shadow-xl"
-src={currentSong} // bisa gambar cover album
-alt="current song"
-initial={{ x: -200, opacity: 0 }}
-animate={{ x: 0, opacity: 1 }}
-exit={{ x: 200, opacity: 0 }}
-transition={{ duration: 0.5, ease: easeOut }}
-onClick={handlePlay}
-/> </nav>
+<a href="/nafisa_cv.pdf" target="_blank" rel="noopener noreferrer">
+  <motion.img
+    key={theme}
+    className="song drop-shadow-xl p-0 m-0 bg-transparent border-none cursor-pointer"
+    src={currentSong}
+    alt="open-cv"
+    initial={{ x: -200, opacity: 0 }}
+    animate={{ x: 0, opacity: 1 }}
+    exit={{ x: 200, opacity: 0 }}
+    transition={{ duration: 0.5, ease: easeOut }}
+    onClick={handlePlay}
+  />
+</a>
+ </nav>
 );
 };
 

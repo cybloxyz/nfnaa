@@ -19,7 +19,6 @@ import rice from "../assets/images/rice.webp";
 import shrimp from "../assets/images/shrimp.webp";
 import snack from "../assets/images/snack.webp";
 import tomato from "../assets/images/tomato.webp";
-import bentobox from "../assets/images/bentobox.webp";
 import empty from "../assets/images/emptybox.webp";
 
 import Navbar from "../assets/components/navbar";
@@ -79,10 +78,14 @@ const Space = () => {
               Hi, I’m Nafisa Nailal Husna, 
               11th grade student who loves code and chem!
 
+              click the music note beside to play my CV
+
               `,
           id: `
               hai! saya nafisa nailal husna, siswi kelas 11 yang
               sangat menyukai kimia dan kode
+
+              klik not musik di sebelah untuk memutar CV saya
 
               `};
   const footer ={
@@ -157,6 +160,7 @@ const Space = () => {
       <section id="Me" className="h-400 flex flex-col justify-center items-center">
         <div className="flex justify-center items-center lg:mt-24 md:mt-24 sm:mb-64 mt-16 mb-32 relative group">
           {/* Gambar + efek hover */}
+          
           <img
             src={Me}
             height="1000px"

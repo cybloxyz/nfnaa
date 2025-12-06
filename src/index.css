@@ -66,6 +66,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color, #ffffff;
 }
 
+.cursor-pointer {
+  cursor: url("/pixelchicken/Chicken\ Precision\ Select.cur"), pointer;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
