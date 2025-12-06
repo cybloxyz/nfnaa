@@ -94,7 +94,7 @@ const Space = () => {
           Reserved.`,
                  id: `🛸 Nafisa Nailal Husna. Hak Dilindungi Undang-Undang`
   }
-  const disc = {en: "this part is still in progress...", id: "bagian ini masih dalam proses..."}
+  const disc = {en: "click each food for more!", id: "klik makanan untuk lebih lanjut!"}
 
   // ====== Background Music berubah sesuai theme ======
   useEffect(() => {
@@ -220,7 +220,7 @@ const Space = () => {
         </div>
         <h1 className="text-xl text-white drop-shadow-lg">{disc[language]}</h1>
 
-  <div className="flex justify-center items-center lg:mt-12 md:mt-12 mt-8 mb-22 relative group">
+  <div className="flex justify-center items-center lg:mt-12 md:mt-12 mt-2 mb-22 relative group">
 
   {/* bento box */}
   <img
@@ -229,44 +229,45 @@ const Space = () => {
   />
 
   {/* tomat (kiri atas) */}
-  <button onClick={() => alert("Ini tomato!")} className="overflow-hidden absolute top-[0.5px] left-[2px] p-0 m-0 bg-transparent border-none">
+  <button onClick={() => alert("Ini tomato!")} 
+          className="overflow-hidden absolute top-[0.5px] lg:left-[2px] md:left-[2px] left-[0.5px] p-0 m-0 bg-transparent border-none">
     <img
       src={tomato}
-      className="w-[120px] md:w-[150px] lg:w-[350px] hover:scale-105 transition-transform duration-200"
+      className="w-[170px] sm:w-[250px] md:w-[300px] lg:w-[350px] hover:scale-105 transition-transform duration-200"
     />
   </button>
 
  
 
   {/* nasi (tengah) */}
-  <button onClick={() => alert("Ini rice!")} className="overflow-hidden absolute top-[0.5px] right-[4px] p-0 m-0 bg-transparent border-none">
+  <button onClick={() => alert("Ini rice!")} className="overflow-hidden absolute lg:top-[0.5px] md:top-[0.5px] top-[2px] right-[1px] p-0 m-0 bg-transparent border-none">
     <img
       src={rice}
-      className="w-[120px] md:w-[150px] lg:w-[520px] hover:scale-105 transition-transform duration-200"
+      className="w-[245px] sm:w-[380px] md:w-[450px] lg:w-[520px] hover:scale-105 transition-transform duration-200"
     />
   </button>
 
    {/* udang (kanan atas) */}
-  <button onClick={() => alert("Ini shrimp! 🍤")} className="overflow-hidden absolute top-[220px] left-[6px] p-0 m-0 bg-transparent border-none">
+  <button onClick={() => alert("Ini shrimp! 🍤")} className="overflow-hidden absolute lg:top-[220px] md:top-[190px] sm:top-[160px] top-[120px] lg:left-[6px] sm:left-[0.5px] left-[4px] p-0 m-0 bg-transparent border-none">
     <img
       src={shrimp}
-      className="w-[120px] md:w-[150px] lg:w-[440px] hover:scale-105 transition-transform duration-200"
+      className="w-[200px] sm:w-[325px] md:w-[390px] lg:w-[440px] hover:scale-105 transition-transform duration-200"
     />
   </button>
 
   {/* snack (kiri bawah) */}
-  <button onClick={() => alert("Ini onigiri! ")} className="overflow-hidden absolute top-[450px] left-[6px] p-0 m-0 bg-transparent border-none">
+  <button onClick={() => alert("Ini onigiri! ")} className="overflow-hidden absolute lg:top-[450px] md:top-[400px] top-[235px] sm:top-[345px] lg:left-[6px] left-[3px] p-0 m-0 bg-transparent border-none">
     <img
       src={snack}
-      className="w-[120px] md:w-[150px] lg:w-[750px] hover:scale-105 transition-transform duration-200"
+      className="w-[345px] sm:w-[600px] md:w-[700px] lg:w-[750px] hover:scale-105 transition-transform duration-200"
     />
   </button>
 
   {/* timun (kanan bawah) */}
-  <button onClick={() => alert("Ini cucumber! ")} className="overflow-hidden absolute top-[250px] right-[4px] p-0 m-0 bg-transparent border-none">
+  <button onClick={() => alert("Ini cucumber! ")} className="overflow-hidden absolute lg:top-[243px] md:top-[220px] sm:top-[190px] top-[125px] lg:right-[4px] sm:right-[8px] right-[1px] p-0 m-0 bg-transparent border-none">
     <img
       src={c}
-      className="w-[120px] md:w-[150px] lg:w-[350px] hover:scale-105 transition-transform duration-200"
+      className="w-[160px] sm:w-[250px] md:w-[300px] lg:w-[350px] hover:scale-105 transition-transform duration-200"
     />
   </button>
 
