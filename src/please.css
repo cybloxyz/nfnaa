@@ -83,6 +83,11 @@ html, body {
   gap: 20px;
 }
 
+.pic {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
 .button {
   image-rendering: pixelated;
   image-rendering: crisp-edges; /* untuk kompatibilitas browser */

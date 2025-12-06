@@ -39,7 +39,6 @@ const Bento = ({language, setLanguage}) => {
                     
                  </h1>
 
-                 <img src={Plane} className="absolute w-16 h-16 lg:w-48 lg:h-48 animate-bounce mt-12 pixelated"/>
 
                 </button> 
              

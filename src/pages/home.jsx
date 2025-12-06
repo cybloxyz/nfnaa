@@ -14,6 +14,13 @@ import Me from "../assets/images/mee.png";
 import Pr from "../assets/images/proj.webp";
 import Bb from "../assets/images/bb.webp";
 import S from "../assets/images/sp.webp";
+import c from "../assets/images/cucum.webp";
+import rice from "../assets/images/rice.webp";
+import shrimp from "../assets/images/shrimp.webp";
+import snack from "../assets/images/snack.webp";
+import tomato from "../assets/images/tomato.webp";
+import bentobox from "../assets/images/bentobox.webp";
+import empty from "../assets/images/emptybox.webp";
 
 import Navbar from "../assets/components/navbar";
 import Music from "../assets/components/music"; 
@@ -212,9 +219,61 @@ const Space = () => {
           />
         </div>
         <h1 className="text-xl text-white drop-shadow-lg">{disc[language]}</h1>
-        
-        <Card language={language} setLanguage={setLanguage}/>
+
+  <div className="flex justify-center items-center lg:mt-12 md:mt-12 mt-8 mb-22 relative group">
+
+  {/* bento box */}
+  <img
+    src={empty}
+    className="pic md:w-[650px] md:h-[700px] lg:w-[750px] lg:h-[800px] sm:w-[550px] sm:h-[600px] w-[350px] h-[400px]"
+  />
+
+  {/* tomat (kiri atas) */}
+  <button onClick={() => alert("Ini tomato!")} className="overflow-hidden absolute top-[0.5px] left-[2px] p-0 m-0 bg-transparent border-none">
+    <img
+      src={tomato}
+      className="w-[120px] md:w-[150px] lg:w-[350px] hover:scale-105 transition-transform duration-200"
+    />
+  </button>
+
+ 
+
+  {/* nasi (tengah) */}
+  <button onClick={() => alert("Ini rice!")} className="overflow-hidden absolute top-[0.5px] right-[4px] p-0 m-0 bg-transparent border-none">
+    <img
+      src={rice}
+      className="w-[120px] md:w-[150px] lg:w-[520px] hover:scale-105 transition-transform duration-200"
+    />
+  </button>
+
+   {/* udang (kanan atas) */}
+  <button onClick={() => alert("Ini shrimp! 🍤")} className="overflow-hidden absolute top-[220px] left-[6px] p-0 m-0 bg-transparent border-none">
+    <img
+      src={shrimp}
+      className="w-[120px] md:w-[150px] lg:w-[440px] hover:scale-105 transition-transform duration-200"
+    />
+  </button>
+
+  {/* snack (kiri bawah) */}
+  <button onClick={() => alert("Ini onigiri! ")} className="overflow-hidden absolute top-[450px] left-[6px] p-0 m-0 bg-transparent border-none">
+    <img
+      src={snack}
+      className="w-[120px] md:w-[150px] lg:w-[750px] hover:scale-105 transition-transform duration-200"
+    />
+  </button>
+
+  {/* timun (kanan bawah) */}
+  <button onClick={() => alert("Ini cucumber! ")} className="overflow-hidden absolute top-[250px] right-[4px] p-0 m-0 bg-transparent border-none">
+    <img
+      src={c}
+      className="w-[120px] md:w-[150px] lg:w-[350px] hover:scale-105 transition-transform duration-200"
+    />
+  </button>
+
+</div>
+
                  
+       
                
       </section>
 
