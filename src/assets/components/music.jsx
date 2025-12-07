@@ -34,7 +34,7 @@ console.log("Audio tidak bisa diputar:", err);
 };
 
 return ( <nav>
-<a href="/nafisa_cv.pdf" target="_blank" rel="noopener noreferrer">
+
   <motion.img
     key={theme}
     className="song drop-shadow-xl p-0 m-0 bg-transparent border-none cursor-pointer"
@@ -46,7 +46,7 @@ return ( <nav>
     transition={{ duration: 0.5, ease: easeOut }}
     onClick={handlePlay}
   />
-</a>
+s
  </nav>
 );
 };
