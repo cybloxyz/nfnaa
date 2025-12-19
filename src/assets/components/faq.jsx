@@ -36,7 +36,7 @@ function FAQs({ language }) {
       {
         question: "Where can i find BentoBox?✮⋆˙",
         answer:
-          "you can click the BentoBox section or go to bentobox.nfnaa.space",
+          "you can click the BentoBox section or go to bentobox.nfnaa.dev",
       },
       {
         question: "How to contact developer?✮⋆˙",
@@ -53,7 +53,7 @@ function FAQs({ language }) {
       {
         question: "Dimana aku bisa menemukan BentoBox?✮⋆˙",
         answer:
-          "kamu bisa klik kotak yang ada di bagian BentoBox atau mengunjungi bentobox.nfnaa.space",
+          "kamu bisa klik kotak yang ada di bagian BentoBox atau mengunjungi bentobox.nfnaa.dev",
       },
       {
         question: "Bagaimana cara menghubungi developer?✮⋆˙",
