@@ -132,7 +132,7 @@ const Space = () => {
      
       {/* ====== Baris 1 ====== */}
       <section id="Home">
-<div className="w-screen lg:px-16 md:px-6 px-6 mt-64 mx-12">
+<div className="w-screen lg:px-16 md:px-4 px-4 mt-72 mx-8">
   <h1 className={`mt-16 leading-relaxed whitespace-normal lg:text-6xl md:text-5xl sm:text-4xl text-3xl col-span-1 ${theme === "dark" ? "text-white" : "text-blue-900"}`}>
     Hey! I'm a{" "}
     <span className="font-bold text-sky-400">{ttext}</span>
@@ -141,12 +141,17 @@ const Space = () => {
     </span>
   </h1>
 
-      <Navbar language={language} setLanguage={setLanguage} theme={theme} setTheme={setTheme} />
-      <Music theme={theme} setTheme={setTheme} />
-      <ThemeNotif language={language} setLanguage={setLanguage} />
+      
 
 </div>
 
+      <Navbar language={language} setLanguage={setLanguage} theme={theme} setTheme={setTheme} />
+
+      <div className="lg:mx-12 md:mx-2 mx-8">
+      <Music theme={theme} setTheme={setTheme} />
+      </div>
+
+      <ThemeNotif language={language} setLanguage={setLanguage} />
 
       <div className="mt-96 w-24 flex justify-center">
         <section>
@@ -233,18 +238,15 @@ const Space = () => {
   />
 
   {/* tomat (kiri atas) */}
-  <button onClick={() => alert("Ini tomato!")} 
+  <button onClick={() => alert("apparels? come here!")} 
           className="overflow-hidden absolute top-[0.5px] lg:left-[2px] md:left-[2px] left-[0.5px] p-0 m-0 bg-transparent border-none">
     <img
       src={tomato}
       className="w-[170px] sm:w-[250px] md:w-[300px] lg:w-[350px] hover:scale-105 transition-transform duration-200"
     />
   </button>
-
- 
-
   {/* nasi (tengah) */}
-  <button onClick={() => alert("Ini rice!")} className="overflow-hidden absolute lg:top-[0.5px] md:top-[0.5px] top-[2px] right-[1px] p-0 m-0 bg-transparent border-none">
+  <button onClick={() => alert("website maker machine!")} className="overflow-hidden absolute lg:top-[0.5px] md:top-[0.5px] top-[2px] right-[1px] p-0 m-0 bg-transparent border-none">
     <img
       src={rice}
       className="w-[245px] sm:w-[380px] md:w-[450px] lg:w-[520px] hover:scale-105 transition-transform duration-200"
@@ -252,7 +254,7 @@ const Space = () => {
   </button>
 
    {/* udang (kanan atas) */}
-  <button onClick={() => alert("Ini shrimp! 🍤")} className="overflow-hidden absolute lg:top-[220px] md:top-[190px] sm:top-[160px] top-[120px] lg:left-[6px] sm:left-[0.5px] left-[4px] p-0 m-0 bg-transparent border-none">
+  <button onClick={() => alert("game maker machine!")} className="overflow-hidden absolute lg:top-[220px] md:top-[190px] sm:top-[160px] top-[120px] lg:left-[6px] sm:left-[0.5px] left-[4px] p-0 m-0 bg-transparent border-none">
     <img
       src={shrimp}
       className="w-[200px] sm:w-[325px] md:w-[390px] lg:w-[440px] hover:scale-105 transition-transform duration-200"
@@ -260,7 +262,7 @@ const Space = () => {
   </button>
 
   {/* snack (kiri bawah) */}
-  <button onClick={() => alert("Ini onigiri! ")} className="overflow-hidden absolute lg:top-[450px] md:top-[400px] top-[235px] sm:top-[345px] lg:left-[6px] left-[3px] p-0 m-0 bg-transparent border-none">
+  <button onClick={() => alert("need help for stuffs or gifts? ")} className="overflow-hidden absolute lg:top-[450px] md:top-[400px] top-[235px] sm:top-[345px] lg:left-[6px] left-[3px] p-0 m-0 bg-transparent border-none">
     <img
       src={snack}
       className="w-[345px] sm:w-[600px] md:w-[700px] lg:w-[750px] hover:scale-105 transition-transform duration-200"
@@ -268,7 +270,7 @@ const Space = () => {
   </button>
 
   {/* timun (kanan bawah) */}
-  <button onClick={() => alert("Ini cucumber! ")} className="overflow-hidden absolute lg:top-[243px] md:top-[220px] sm:top-[190px] top-[125px] lg:right-[4px] sm:right-[8px] right-[1px] p-0 m-0 bg-transparent border-none">
+  <button onClick={() => alert("hardware omg! ")} className="overflow-hidden absolute lg:top-[243px] md:top-[220px] sm:top-[190px] top-[125px] lg:right-[4px] sm:right-[8px] right-[1px] p-0 m-0 bg-transparent border-none">
     <img
       src={c}
       className="w-[160px] sm:w-[250px] md:w-[300px] lg:w-[350px] hover:scale-105 transition-transform duration-200"

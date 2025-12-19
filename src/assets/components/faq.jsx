@@ -73,8 +73,8 @@ function FAQs({ language }) {
         </h1>
         <p className="text-xs sm:text-base md:text-lg text-center mb-10 sm:mb-14 font-light">
           {language === "en"
-            ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+            ? "here are some question and answer that may help you!"
+            : "ini adalah beberapa pertanyaan dan jawaban yang mungkin membantu kamu!"}
         </p>
         {faqs[language].map((faq, index) => (
           <Accordion key={index} question={faq.question} answer={faq.answer} />

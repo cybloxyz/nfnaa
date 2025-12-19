@@ -23,7 +23,7 @@ if (audioRef.current) {
 audioRef.current.pause();
 }
 };
-}, [currentSong]);
+}, [currentSong]); 
 
 const handlePlay = () => {
 if (audioRef.current) {
@@ -40,13 +40,13 @@ return ( <nav>
     className="song drop-shadow-xl p-0 m-0 bg-transparent border-none cursor-pointer"
     src={currentSong}
     alt="open-cv"
-    initial={{ x: -200, opacity: 0 }}
+    initial={{ x: -100, opacity: 0 }}
     animate={{ x: 0, opacity: 1 }}
-    exit={{ x: 200, opacity: 0 }}
+    exit={{ x: 100, opacity: 0 }}
     transition={{ duration: 0.5, ease: easeOut }}
     onClick={handlePlay}
   />
-s
+
  </nav>
 );
 };
